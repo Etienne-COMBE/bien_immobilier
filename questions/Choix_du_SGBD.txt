@@ -1,0 +1,30 @@
+1. Qu'est ce qu'un SGBD ?
+Un SGBD est un Système de Gestion de Base de Données.
+C'est un langage de conception de base de données. il permet d'effectuer des actions et opérations sur les données:
+- Create -> Enregistrer de nouvelles données au sein de la BDD
+- Read   -> Consulter des données
+- Update
+- Delete
+
+2. Donner 3 exemples de SGBD relationnel et non relationnel.
+Relationnel:
+- MariaDB
+- SQLite
+- MySQL
+Non-relationnel:
+- MangoDB
+- Apache Cassandra
+- Neo4j
+
+3. Quelle est la différence entre un SGBD relationnel et non relationnel ?
+Dans un SGBD relationnel, on définit une structure de données respectant des règles (3NF) qui permettent
+d'assurer l'intégrité de nos données.
+D'autre part, une SGBD non relationnel est une façon de stocker des données sans structure précise ce qui
+peut etre avantageux dans certains cas.
+
+4. Dans quel cas choisir un SGBD relationnel ou non relationnel ?
+Si on veut avoir une intégrité de nos données et/ou pouvoir faire le lien entre nos données, un SGBD relationnel
+convient car il devrait répondre aux principes ACID (Atomicite, Coherence, Isolation, Durabilite).
+Si au contraire on fait face à un volume de données entrant très fort ou bien que le nombre de requêtes augmente
+beaucoup, il est plus intéressant d'utiliser un SGBD non relationnel car il va permettre de gagner en rapidité
+de réponse. Le problème est qu'on risque de perdre en intégrité de données.
